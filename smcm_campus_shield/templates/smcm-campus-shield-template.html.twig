@@ -1,0 +1,14 @@
+{% if emergency_description is not null %}
+<div id="announcement" class="alert" style="text-align:center;"><div class="wrap"><strong>{{ emergency_description | replace({"&nbsp;": " "}) }}</strong></div></div>
+{% elseif notification_description is not null %}
+<div id="announcement" class="notice" style="text-align:center;"><div class="wrap"><strong>{{ notification_description | replace({"&nbsp;": " "}) }}</strong></div></div>
+{% else %}
+<div class="notice" id="announcement">
+<div class="wrap">
+<h4><a href="https://www.smcm.edu/spring-2021/">Spring 2021</a></h4>
+<p><a href="https://www.smcm.edu/spring-2021/">Learn More</a></p>
+<p><a href="https://www.smcm.edu/covid-19/#dashboard">Covid-19 Dashboard</a></p>
+</div>
+</div>
+{% endif %}
+

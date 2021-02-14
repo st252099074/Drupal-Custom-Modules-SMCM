@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_theme_registry_alter
+ * Change View template
+ */
+function smcm_cookie_consent_theme_registry_alter(&$theme_registry) {
+
+  $theme_registry['cookieconsent']['path'] = drupal_get_path('module', 'smcm_cookie_consent') . '/templates';
+}

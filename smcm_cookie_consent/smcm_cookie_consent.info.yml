@@ -1,0 +1,6 @@
+name: SMCM cookie consent
+description: Custom Twig for the consent cookie
+package: SMCM
+
+type: module
+core: 8.x

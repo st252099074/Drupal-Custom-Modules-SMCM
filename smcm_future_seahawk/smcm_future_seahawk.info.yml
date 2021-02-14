@@ -1,0 +1,5 @@
+name: SMCM Future Seahawk Event Title
+description: Alter the Event Title on the Future Seahawk Event page
+package: SMCM
+type: module
+core: 8.x

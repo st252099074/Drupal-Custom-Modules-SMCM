@@ -1,0 +1,10 @@
+
+<?php
+//change the title from Event to Admitted Students Events for the events exposed filter page at /events/category?field_event_category_target_id=1119
+function smcm_future_seahawk_views_pre_render(\Drupal\views\ViewExecutable $view) {
+ $current_uri = \Drupal::request()->getRequestUri();
+ if ($view->id() == 'events' && $view->current_display == 'page_3' && $current_uri =='/events/category?field_event_category_target_id=1119') { 
+    $view->setTitle('Admitted Student Events');
+ }
+}
+
