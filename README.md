@@ -1,1 +1,1 @@
-# drupal-custom-module-2020
+# drupal-custom-modules-smcm-2020
